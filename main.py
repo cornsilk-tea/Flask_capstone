@@ -1,4 +1,5 @@
 from flask import Flask, request
+from deepface import DeepFace
 # from flask_ngrok import run_with_ngrok
 
 
@@ -14,6 +15,12 @@ def upload_file():
     file = request.files['userfile']
     file.save('./'+ file.filename)
     return "success"
+
+@app.route('/verify', methods=['POST'])
+def verify():
+    pass
+
+
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5555, debug=True)

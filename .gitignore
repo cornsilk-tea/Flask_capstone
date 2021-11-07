@@ -15,7 +15,8 @@ __pycache__/
 *$py.class
 
 # 사진파일
-팀원사진/
+img_data/
+*.jpg
 
 # C extensions
 *.so
